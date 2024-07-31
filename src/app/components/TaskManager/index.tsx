@@ -1,25 +1,31 @@
 import { Img, Text, Heading, Button } from "../";
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 interface Props {
+  id: number;
+  title: string;
+  components: {
+    taskTitle: string,
+    taskDescription: string,
+    taskPriority: string,
+    taskDeadline: string,
+    taskTime: string
+  }[];
   className?: string;
-  toDoText?: React.ReactNode;
-  taskTitle?: React.ReactNode;
-  taskDescription?: React.ReactNode;
-  taskPriority?: string;
-  taskDateText?: React.ReactNode;
-  taskTime?: React.ReactNode;
-  addNewText?: React.ReactNode;
 }
 
 export default function TaskManager({
-    toDoText = "To do",
-    taskTitle = "Implement User Authentication",
-    taskDescription = "Develop and integrate user authentication using email and password.",
-    taskPriority = "Urgent",
-    taskDateText = "2024-08-15",
-    taskTime = "1 hr ago",
-    addNewText = "Add new",
+    id,
+    title,
+    components: [
+      {
+        taskTitle,
+        taskDescription,
+        taskPriority,
+        taskDeadline,
+        taskTime
+      }
+    ],
     ...props
   }: Props) {
     return (
@@ -27,7 +33,7 @@ export default function TaskManager({
         <div className="flex flex-col gap-3.5 self-stretch">
           <div className="flex items-center justify-between gap-5">
             <Text as="p" className="!text-gray-700_02">
-              {toDoText}
+              {title}
             </Text>
             <Img
               src="img_frame_gray_700_02.svg"
@@ -65,7 +71,7 @@ export default function TaskManager({
                 className="h-[24px] w-[24px]"
               />
               <Heading size="headingxs" as="p" className="!text-gray-700">
-                {taskDateText}
+                {taskDeadline}
               </Heading>
             </div>
             <div className="flex">
@@ -76,7 +82,7 @@ export default function TaskManager({
           </div>
           <div className="flex items-center justify-between gap-5 rounded-lg bg-gradient1 p-2">
             <Text size="texts" as="p" className="!text-gray-300_02">
-              {addNewText}
+              Add new
             </Text>
             <Img
               src="img_frame_gray_300_02.svg"
