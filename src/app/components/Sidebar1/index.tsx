@@ -81,11 +81,12 @@ export default function Sidebar1({ ...props }: Props) {
           Analytics
         </MenuItem>
         <MenuItem
-          suffix={
-            <Img src="img_frame_white_a700.svg" width={24} height={24} alt="Task Icon" className="h-[24px] w-[24px]" />
-          }
+          className="deep_purple_600_01_indigo_200_border "
         >
-          Create new task
+          <Text className="!text-neutral-50 !font-medium flex-grow text-center">
+            Create new task
+          </Text>
+          <Img src="img_frame_white_a700.svg" width={24} height={24} alt="Task Icon" className="h-[24px] w-[24px] flex-grow items-center mr-5" />
         </MenuItem>
       </Menu>
 

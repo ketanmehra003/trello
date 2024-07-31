@@ -19,9 +19,33 @@ a {
 /* ----------------------------------------------------------------- */
 /* Add this to your index.css or a relevant stylesheet */
 .deep_purple_600_01_indigo_200_border {
-  border: 2px solid;
-  border-image: linear-gradient(to right, #4b35cc, #9c93d4) ;
-  background-color: #4b35cc; 
+  background: linear-gradient(180deg, #4C38C2 0%, #2F2188 100%);
+  border: 1px solid;
+  border-image-source: linear-gradient(360deg, #4B36CC 0%, #9C93D4 107.69%);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 12px 16px 0px rgba(186, 186, 186, 0.2) inset;
+  width: Fill (253px)px;
+  height: Fixed (52px)px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.color_deep_purple_button{
+  width: Hug (136px)px;
+  height: Hug (40px)px;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: linear-gradient(180deg, #4C38C2 0%, #2F2188 100%);
+  border: 1px solid;
+  border-image-source: linear-gradient(360deg, #4B36CC 0%, #9C93D4 107.69%);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 12px 16px 0px rgba(186, 186, 186, 0.2) inset;
+  color: rgba(255, 255, 255, 1);
+
 }
 /* ----------------------------------------------------------------- */
 

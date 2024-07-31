@@ -52,23 +52,25 @@ export default function DashboardPage() {
                             >
                                 Share
                             </Button>
-                            <Button
-                                variant="outline"
-                                shape="round"
-                                color="deep_purple_600_01_indigo_200_border"
-                                className="min-w-[136px] gap-2 font-medium"
-                                rightIcon={
-                                    <Img
-                                        src="img_frame_white_a700.svg"
-                                        width={24}
-                                        height={24}
-                                        alt="Frame"
-                                        className="h-[24px] w-[24px]"
-                                    />
-                                }
-                            >
-                                Create new
-                            </Button>
+                            <div className="flex items-center gap-2.5 color_deep_purple_button">
+                                <Button
+                                    variant="outline"
+                                    shape="round"
+                                    
+                                    className="min-w-[136px] gap-2 font-medium text-white"
+                                    rightIcon={
+                                        <Img
+                                            src="img_frame_white_a700.svg"
+                                            width={24}
+                                            height={24}
+                                            alt="Frame"
+                                            className="h-[24px] w-[24px]"
+                                        />
+                                    }
+                                >
+                                    Create new
+                                </Button>
+                            </div>
                         </div>
                     </div>
                 </div>
